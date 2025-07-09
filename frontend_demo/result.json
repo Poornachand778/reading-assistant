@@ -1,0 +1,98 @@
+{
+  "expected": "Once upon a time, in a dense forest, there lived a fierce lion who declared himself the king of all animals.",
+  "spoken": "Once upon a time, in a dense forest, there lived a fiel iron who declared himself the king of all animals.",
+  "alignment": [
+    {
+      "word": "once",
+      "status": "correct"
+    },
+    {
+      "word": "upon",
+      "status": "correct"
+    },
+    {
+      "word": "a",
+      "status": "correct"
+    },
+    {
+      "word": "time,",
+      "status": "correct"
+    },
+    {
+      "word": "in",
+      "status": "correct"
+    },
+    {
+      "word": "a",
+      "status": "correct"
+    },
+    {
+      "word": "dense",
+      "status": "correct"
+    },
+    {
+      "word": "forest,",
+      "status": "correct"
+    },
+    {
+      "word": "there",
+      "status": "correct"
+    },
+    {
+      "word": "lived",
+      "status": "correct"
+    },
+    {
+      "word": "a",
+      "status": "correct"
+    },
+    {
+      "word": "fierce",
+      "status": "missed"
+    },
+    {
+      "word": "lion",
+      "status": "missed"
+    },
+    {
+      "word": "fiel",
+      "status": "extra"
+    },
+    {
+      "word": "iron",
+      "status": "extra"
+    },
+    {
+      "word": "who",
+      "status": "correct"
+    },
+    {
+      "word": "declared",
+      "status": "correct"
+    },
+    {
+      "word": "himself",
+      "status": "correct"
+    },
+    {
+      "word": "the",
+      "status": "correct"
+    },
+    {
+      "word": "king",
+      "status": "correct"
+    },
+    {
+      "word": "of",
+      "status": "correct"
+    },
+    {
+      "word": "all",
+      "status": "correct"
+    },
+    {
+      "word": "animals.",
+      "status": "correct"
+    }
+  ]
+}

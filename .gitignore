@@ -1,0 +1,19 @@
+venv_ra310/
+# Ignore the virtual environment directory
+*.pyc
+# Ignore Python bytecode files
+__pycache__/
+# Ignore Python cache directories
+*.pyo
+# Ignore optimized Python files
+*.pyd
+# Ignore Python dynamic module files
+*.pdb
+# Ignore Python debug files
+*.egg-info/
+# Ignore Python egg info directories
+*.eggs/
+# Ignore Python egg files
+*.whl
+
+Montreal-Forced-Aligner-2.2.17/

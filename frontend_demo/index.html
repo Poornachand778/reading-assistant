@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Reading Assistant - Demo</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    .word {
+      padding: 4px 8px;
+      margin: 2px;
+      border-radius: 6px;
+      display: inline-block;
+    }
+    .correct { background-color: #d4edda; color: #155724; }
+    .missed { background-color: #f8d7da; color: #721c24; }
+    .extra  { background-color: #fff3cd; color: #856404; }
+  </style>
+</head>
+<body>
+
+<h2>Reading Assistant - Demo</h2>
+<p><strong>Expected:</strong> <span id="expected"></span></p>
+<p><strong>Spoken:</strong> <span id="spoken"></span></p>
+<hr>
+<h3>Result:</h3>
+<div id="highlighted"></div>
+
+<script>
+fetch("result.json")
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById("expected").innerText = data.expected;
+    document.getElementById("spoken").innerText = data.spoken;
+
+    const container = document.getElementById("highlighted");
+    data.alignment.forEach(item => {
+      const span = document.createElement("span");
+      span.className = `word ${item.status}`;
+      span.innerText = item.word;
+      container.appendChild(span);
+    });
+  });
+</script>
+
+</body>
+</html>
