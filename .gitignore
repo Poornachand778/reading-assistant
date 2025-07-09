@@ -17,3 +17,10 @@ __pycache__/
 *.whl
 
 Montreal-Forced-Aligner-2.2.17/
+
+#OS specific files
+.DS_Store
+# Ignore macOS Finder metadata files
+Thumbs.db
+# Ignore Windows thumbnail cache files
+*.swp
