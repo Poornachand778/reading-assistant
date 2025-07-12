@@ -1,0 +1,12 @@
+services:
+  mfa:
+    build:
+      context: ./docker/mfa-arm64
+    image: mfa-arm64:latest
+    volumes:
+      - ./mfa_data/wav:/data/wav
+      - ./mfa_data/txt:/data/txt
+      - ./mfa_data/models:/root/.local/share/montreal_forced_aligner
+      - ./mfa_data/output:/data/output
+    working_dir: /data
+    entrypoint: ["mfa"]

@@ -24,3 +24,5 @@ Montreal-Forced-Aligner-2.2.17/
 Thumbs.db
 # Ignore Windows thumbnail cache files
 *.swp
+
+trash/
